@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo
+## Dubbo
+dubbo:
+  protocol:
+    port: -1
+    name: dubbo
+    serialization: java
+  consumer:
+    check: false
+  scan.basePackages: com.example.dubbodemo
+  registry.address: zookeeper://localhost:2181
